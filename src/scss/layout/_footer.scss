@@ -1,0 +1,107 @@
+.central-column {
+  margin: auto 15px;
+  @media (min-width: 768px) {
+    margin: auto 45px;
+  }
+  @media (min-width: 1200px) {
+    margin: auto 138px;
+  }
+}
+
+.footer-gray {
+  border-top: solid $Grisclaro 1px;
+  margin-top: 60px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  font-size: $FontSizeSmall;
+  &__copy {
+    grid-column: span 1;
+    color: $Grisclaro;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  &__menu {
+    grid-column: span 1;
+    text-align: center;
+    line-height: 1.43em;
+    color: $ColorGris;
+    opacity: 0.75;
+    text-transform: uppercase;
+  }
+  &__menu-link {
+    color: $ColorGris;
+    padding-left: 15px;
+    line-height: 2.4;
+    text-decoration: none;
+    &:focus,
+    &:hover {
+      color: $Verdeclaro;
+      text-decoration: none;
+      font-size: 120%;
+      transition-property: font-size;
+      transition-duration: 1s;
+    }
+    &:active {
+      color: $Verdeoscuro;
+      text-decoration: none;
+    }
+  }
+  &__logo {
+    grid-column: span 1;
+    padding-top: 30px;
+    text-align: center;
+  }
+  &__logo-size {
+    width: 115.9px;
+  }
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    &__copy {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      text-align: left;
+    }
+    &__menu {
+      grid-column: 2 / 3;
+      grid-row: 1/3;
+      width: 100%;
+      text-align: right;
+      line-height: 2.5;
+    }
+    &__menu-link {
+      display: flex;
+      flex-direction: column;
+    }
+    &__logo {
+      grid-column: 1 /2;
+      grid-row: 2/3;
+      margin-left: 0%;
+      text-align: left;
+    }
+  }
+  .name-footer {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 0;
+    text-align: left;
+  }
+  .image-logo {
+    grid-column: 1 /2;
+    grid-row: 2/3;
+    margin-left: 0%;
+    text-align: left;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 30px;
+    padding-bottom: 51px;
+  }
+}
