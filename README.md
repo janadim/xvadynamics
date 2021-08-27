@@ -10,7 +10,7 @@ If you want to know more about us and about what we do please visit our [team's 
 
 Main page
 
-![Logo](./src/images/logo.png)
+![Logo](https://raw.githubusercontent.com/janadim/Eleven-Code/master/src/images/Logo.png)
 
 Contact forma and page
 
