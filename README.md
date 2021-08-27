@@ -11,9 +11,9 @@ Main page
 
 ![Logo](https://raw.githubusercontent.com/janadim/Eleven-Code/master/src/images/Logo.png)
 
-Contact forma and page
+Contact form and page
 
-![gif of desktop view ]()
+![image of form page ](https://raw.githubusercontent.com/janadim/Eleven-Code/master/src/images/Capture.form.PNG)
 
 All the design and pages are responsive and addaptable to all screen sizes.
 
