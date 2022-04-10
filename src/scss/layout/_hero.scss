@@ -1,6 +1,6 @@
 /* Hero image and Motto (Jana)*/
 .image {
-  background-image: url("../images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg");
+  background-image: url("../images/dynamic-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -12,22 +12,30 @@
   width: 100%;
   height: 421px;
 }
-.animation {
-  width: 100%;
+// .animation {
+//   width: 100%;
 
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-left: 90px;
+//   padding-top: 175px;
+// }
+.construction {
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 90px;
-  padding-top: 175px;
+  // margin-left: 90px;
+  // padding-top: 175px;
 }
-.etiqueta1 {
-  width: 45px;
-  animation-name: left;
-  animation-duration: 3s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-}
+// .etiqueta1 {
+//   width: 45px;
+//   animation-name: left;
+//   animation-duration: 3s;
+//   animation-delay: 1s;
+//   animation-fill-mode: forwards;
+// }
 @keyframes left {
   0% {
     transform: translatex(0px) translatey(0px);
@@ -70,13 +78,13 @@
   }
 }
 
-.etiqueta2 {
-  width: 45px;
-  animation-name: right;
-  animation-delay: 1s;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
+// .etiqueta2 {
+//   width: 45px;
+//   animation-name: right;
+//   animation-delay: 1s;
+//   animation-duration: 3s;
+//   animation-fill-mode: forwards;
+// }
 @keyframes right {
   0% {
     transform: translatex(0px) translatey(0px);
@@ -88,6 +96,8 @@
 .logosimple {
   width: 175px;
 }
+
+
 .motto-rectangle {
   background-color: #ffffff;
   position: absolute; /*with respect to hero*/
@@ -116,9 +126,17 @@
 /*Jana mediaquery tablet*/
 @media (min-width: 768px) {
   .image {
-    background-image: url("../images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg");
+    background-image: url("../images/dynamic-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .construction {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin-left: 90px;
+    // padding-top: 175px;
   }
   .motto-rectangle {
     height: 80px;
@@ -142,7 +160,7 @@
 @media (min-width: 1200px) {
   .image {
     width: 100vw;
-    background-image: url("../images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg");
+    background-image: url("../images/dynamic-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -158,3 +176,4 @@
     font-size: 24px;
   }
 }
+

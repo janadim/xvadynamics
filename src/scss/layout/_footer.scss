@@ -40,11 +40,11 @@
     text-decoration: none;
     &:focus,
     &:hover {
-      color: $Verdeclaro;
+      color: $Morado;
       text-decoration: none;
       font-size: 120%;
       transition-property: font-size;
-      transition-duration: 1s;
+      transition-duration: 0.2s;
     }
     &:active {
       color: $Verdeoscuro;
@@ -53,11 +53,11 @@
   }
   &__logo {
     grid-column: span 1;
-    padding-top: 30px;
+    padding-top: 0px;
     text-align: center;
   }
   &__logo-size {
-    width: 115.9px;
+    width: 80px;
   }
   @media (min-width: 768px) {
     display: grid;
