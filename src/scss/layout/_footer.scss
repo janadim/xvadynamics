@@ -42,7 +42,7 @@
     &:hover {
       color: $Morado;
       text-decoration: none;
-      font-size: 120%;
+      font-size: 102%;
       transition-property: font-size;
       transition-duration: 0.2s;
     }
@@ -55,9 +55,10 @@
     grid-column: span 1;
     padding-top: 0px;
     text-align: center;
+
   }
   &__logo-size {
-    width: 80px;
+    width: 70px;
   }
   @media (min-width: 768px) {
     display: grid;

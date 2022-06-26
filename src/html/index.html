@@ -29,5 +29,23 @@
       <include src="./partials/about-us.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+            $(window).scroll(function(){
+                $('.header').css("opacity", ($(window).scrollTop() / 320) - 1)
+                  if($('.header').css("opacity")>0.2)
+                  {
+                    $('.header').css("visibility", 'visible');
+                  }
+                  else
+                  {
+                    $('.header').css("visibility", 'hidden');
+                  }
+              })
+        })
+    </script>
   </body>
 </html>

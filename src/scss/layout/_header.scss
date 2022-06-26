@@ -1,66 +1,98 @@
+
 .header {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: fixed;
+  justify-content: space-between;
+  height: 60px;
   top: 0;
   left: 0;
   z-index: 999;
-  &--color-1 {
+  opacity: 0;
+  visibility: hidden;
+
+
+  &-left{
     background-color: $WhiteBackground;
-    opacity: 0.9;
-  }
-  &--color-2 {
-    background-color: $WhiteBackground;
-    opacity: 0.9;
-  }
-  &__logo {
-    text-align: center;
-    height: 60px;
-    display: flex;
+    width: 20%;
+    // display: flex;
     justify-content: center;
-  }
-  &__nav-list {
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &--link {
-      text-decoration: none;
-      color: white;
-      padding: 15px;
-      text-transform: uppercase;
-      font-family: $FontRubik;
-      font-weight: 600;
+
+
+    @media (min-width: 768px) {
+      width: 34%;
+    }
+    @media (min-width: 1200px) {
+      width: 34%;
+    }
+
+    &__logo{    
+      align-items: center;
+      height: 60px;
+      background-image: url("../images/logo_xvadyn_short_dark.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: relative; /*with respect to the viewport*/
+      margin-left: 0;
+      margin-top: 0;
+
+      @media (min-width: 768px) {
+        background-image: url("../images/logo_xvadyn_long_white.png");
+      }
+      @media (min-width: 1200px) {
+        background-image: url("../images/logo_xvadyn_long_white.png");
+      }
+    
+
     }
   }
-  @media (min-width: 768px) {
+
+  &-right{
+    width:80%;
+    background-color: $MoradoXVA;
     display: flex;
-    flex-direction: row;
-    background-color: $Morado;
-    opacity: 0.9;
-    justify-content: space-between;
     align-items: center;
-    &--color-2 {
-      background-color: $Morado;
+    justify-content: right;
+  
+    @media (min-width: 768px) {
+      width:66%;
     }
+    @media (min-width: 1200px) {
+      width:66%;
+    }
+
+
+    &__nav{
+      width:85%;
+      margin-right: 20px;
+
+      @media (min-width: 768px) {
+        width:55%;
+      }
+      @media (min-width: 1200px) {
+        width:55%;
+      }
+
+      &-list{
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+
+
+        &--link{
+          font-family: Impact;
+          font-weight: 400;
+          text-decoration: none;
+          color: white;
+
+
+
+      }
+    }
+
   }
-}
-.logo-image {
-  width: 120px;
-  @media (min-width: 768px) {
-    width: 170px;
   }
 }
 
-.constuction_text {
-  width: 520px;
-  text-decoration: none;
-  color: yellow;
-  padding: 15px;
-  text-transform: uppercase;
-  font-family: $FontRubik;
-  font-weight: 600;
-  text-align: center;
-  background-color: black;
-}
