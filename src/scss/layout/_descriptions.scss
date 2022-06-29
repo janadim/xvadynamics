@@ -1,148 +1,152 @@
-.item-description {
-  margin: 30px 15px 0 15px;
-  text-align: center;
-  line-height: 1.5;
-  position: relative;
-}
-.anchor {
-  position: absolute;
-  top: -150px;
-}
 
-.title-description {
-  text-transform: uppercase;
-    font-family: $FontRubik;
-    font-weight: 600;
+// .team{
+//   // background-color: $MoradoXVA;
+// }
+
+.services {
+
+  &__container {
+    padding: 35px 15px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    line-height: 1.5;
+    @media (min-width: 780px) {
+      margin: 15px 0 0;
+      line-height: 1.5;
+      padding: 45px 45px 30px;
+    }
+    @media (min-width: 1200px) {
+      line-height: 1.5;
+      padding: 45px 300px 60px 299px;
+    }
+  }
+  &__title-description {
+    text-transform: uppercase;
+    font-family: Impact;
+    font-weight: 200;
     height: 45px;
     text-align: center;
     font-size: 22px;
-    color: $MoradoXVA;
+    // color: $MoradoXVA;
     letter-spacing: 2px;
+  }
+  &__subtitle-description {
+    text-transform: uppercase;
+    font-family: Impact;
+    font-weight: 200;
+    height: 45px;
+    text-align: center;
+    font-size: 22px;
+    // color: $MoradoXVA;
+    letter-spacing: 2px;
+  }
+  &__text {
+    // text-transform: lowercase;
+    font-family: Arial;
+    // font-weight: 100;
+    // height: 45px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 2px;
+    line-height: 22px;
+  }
+  // &__description {
+  //   font-size: 16px;
+  //   text-align: center;
+  //   // color: $ColorGris;
+  // }
 }
-
-.image-description {
+.section {
+  background-color: #efefef;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
   align-items: center;
-  margin-left: 15px;
-  margin-right: 15px;
-  @media (min-width: 768px) {
-    margin-left: 45px;
-    margin-right: 45px;
+
+  &__strengths {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+    // color: $ColorGris;
+    flex-grow: 1;
+    padding: 0 15px 0;
+  }
+
+  &__strengths-title {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 22px;
+    // color: $MoradoOscuro;
+  }
+  &__weaknesses {
+    margin-top: 30px;
+    margin-bottom: 45px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+    // color: $ColorGris;
+    flex-grow: 4;
+    padding: 0 15px 0;
+  }
+  &__weaknesses-title {
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+    // color: $MoradoOscuro;
+  }
+  &__weaknesses-description {
+    font-size: 16px;
+    text-align: center;
+    color: var(--Gris);
+  }
+  @media (min-width: 780px) {
+    margin: 0;
+    padding: 45px 44.8px 60px 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+    &__strengths {
+      margin: 0 0;
+      line-height: 24px;
+    }
+    &__weaknesses {
+      margin: 0;
+      line-height: 24px;
+    }
   }
   @media (min-width: 1200px) {
-    margin-left: 138px;
-    margin-right: 138px;
+    margin: 0;
+    padding: 45px 138px 60px;
+    text-align: center;
+    justify-content: center;
+    &__strengths {
+      margin: 15px 1px 0 45px;
+      line-height: 1.5;
+    }
+    &__weaknesses {
+      margin: 15px 1px 0 45px;
+      line-height: 1.5;
+    }
   }
 }
 
-.size-image {
-  width: 180px;
-  height: 180px;
-  display: block;
-  text-align: center;
-  justify-content: center;
+.team .section {
+  max-width: 320px;
 }
 
-.about-item__name {
-  font-size: 20px;
-  color: black;
-  height: 45px;
-  margin-top: 15px;
-}
-
-.about-item__text-description {
-  color: $ColorGris;
-}
-
-.about-item__social-media {
-  width: 100%;
-  height: 30px;
-  display: inline-block;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 45px;
-}
-
-.item-social {
-  color: $Morado;
-  float: left;
-  margin-left: 15px;
-  margin-top: 15px;
-}
-
-.image-description:nth-child(odd) .item-social {
-  margin-right: 15px;
-  margin-left: 0;
-  margin-top: 15px;
-}
-
-.deco:after {
-  content: ".";
-  color: rgb(87, 84, 84);
-  position: absolute;
-  margin-top: -5px;
-  margin-left: 5px;
-}
-
-.link:link {
-  color: var(--Verdeoscuro);
-  text-decoration: none;
-}
-
-.link:visited {
-  color: $Morado;
-  text-decoration: none;
-}
-.link:hover {
-  color: $ColorGris;
-  text-decoration: none;
-  font-size: 120%;
-  transition-property: font-size;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  cursor: none;
-}
-.link:active {
-  color: $MoradoXVA;
-  text-decoration: none;
-}
-
-@media (min-width: 768px) {
-  .image-description:nth-child(even) {
-    flex-direction: row-reverse;
-    text-align: right;
-  }
-  .image-description:nth-child(odd) {
-    flex-direction: row;
-    text-align: left;
-  }
-  .image-description:nth-child(odd) .socialmedia-list {
-    margin-left: 0;
-    margin-right: auto;
-  }
-  .image-description:nth-child(even) .socialmedia-list {
-    margin-left: auto;
-    margin-right: 0;
-  }
-  .image-description:nth-child(odd) .about-item {
-    padding-left: 30px;
-  }
-  .image-description:nth-child(even) .about-item {
-    padding-right: 30px;
-  }
-  .image-description {
-    align-items: flex-start;
-  }
-}
-
-@media (min-width: 1200px) {
-  .image-description {
-    margin-left: 138px;
-    margin-right: 138px;
-  }
-  .size-image {
-    height: 278px;
-    width: 278px;
-  }
+.bold {
+  font-weight: bold;
 }

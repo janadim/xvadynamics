@@ -33,23 +33,23 @@
     height: 45px;
     text-align: center;
     font-size: 22px;
-    color: $MoradoXVA;
+    // color: $MoradoXVA;
     letter-spacing: 2px;
   }
   &__text {
     // text-transform: lowercase;
-    font-family: $FontRubik;
+    font-family: Arial;
     // font-weight: 100;
     // height: 45px;
     text-align: center;
     font-size: 16px;
     color: black;
-    letter-spacing: 2px;
+    letter-spacing: 2px;    
   }
   &__description {
     font-size: 16px;
     text-align: center;
-    color: $ColorGris;
+    // color: $ColorGris;
   }
 }
 .section {
@@ -67,7 +67,7 @@
     justify-content: center;
     text-align: center;
     line-height: 1.5;
-    color: $ColorGris;
+    // color: $ColorGris;
     flex-grow: 1;
     padding: 0 15px 0;
   }
@@ -76,7 +76,7 @@
     margin-bottom: 15px;
     text-align: center;
     font-size: 22px;
-    color: $MoradoOscuro;
+    // color: $MoradoOscuro;
   }
   &__weaknesses {
     margin-top: 30px;
@@ -86,7 +86,7 @@
     flex-direction: column;
     justify-content: center;
     line-height: 1.5;
-    color: $ColorGris;
+    // color: $ColorGris;
     flex-grow: 4;
     padding: 0 15px 0;
   }
@@ -95,7 +95,7 @@
     text-align: center;
     font-weight: 500;
     font-size: 22px;
-    color: $MoradoOscuro;
+    // color: $MoradoOscuro;
   }
   &__weaknesses-description {
     font-size: 16px;
